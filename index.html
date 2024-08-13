@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="src/img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body class="">
+    <!-- header start -->
+    <header class="2xl:px-24 sm:px-4 bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div>
+                    <a class="flex text-primary text-lg font-bold items-center justify-center py-6" href="#home">
+                        <img src="src/img/logo.jpeg" width="45" alt="" srcset="">
+                        <p class="ml-3 font-normal">Sekolah Fasilitasi</p>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 2xl:hidden">
+                        <span class="block hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="block hamburger-line transition duration-300 ease-in-out"></span>
+                        <span
+                            class="block hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full 2xl:block 2xl:static 2xl:bg-transparent 2xl:max-w-full 2xl:shadow-none 2xl:rounded-none"
+                        id="nav-menu">
+                        <ul class="block 2xl:flex">
+                            <li class="group"><a
+                                    class="text-base text-primary py-2 mx-4 flex underline-animation active:font-semibold"
+                                    href="#home">Home</a></li>
+                            <li class="group"><a class="text-base text-primary py-2 mx-4 flex underline-animation"
+                                    href="#education">Tentang</a></li>
+                            <li class="group"><a class="text-base text-primary py-2 mx-4 flex underline-animation"
+                                    href="#portfolio">Program</a></li>
+                            <li class="group"><a class="text-base text-primary py-2 mx-4 flex underline-animation"
+                                    href="#contact">Daftar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <div id="home" class="w-full 2xl:mt-8 sm:mt-28 2xl:px-24 sm:px-4">
+        <div class="container mx-auto p-0">
+            <div class="flex flex-wrap 2xl:flex-nowrap justify-between">
+                <!-- bagian text -->
+                <div class="w-full 2xl:w-1/2 h-auto 2xl:h-screen flex items-center justify-center pt-4">
+                    <div class="space-y-4 w-full">
+                        <h2 class="text-dark 2xl:text-5xl sm:text-3xl font-semibold 2xl:leading-[56px] sm:leading-[40px]">
+                            Future Sustainable Development Leaders
+                        </h2>
+                        <p class="mt-4 text-gray-600 font-medium text-sm sm:text-base md:text-lg">
+                            Siap jadi pemimpin masa depan di bidang pengembangan berkelanjutan? Yuk, bergabung dengan
+                            bootcamp kami! Kamu akan belajar keterampilan praktis dan cara kreatif untuk mengatasi
+                            tantangan dunia. Ayo, bersama kita bisa bikin perubahan yang berarti dan wujudkan masa depan
+                            yang lebih baik. Daftar sekarang!
+                        </p>
+                        <div class="w-full flex flex-col space-y-4 mt-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                            <a href="#"
+                                class="flex w-full sm:w-[200px] h-[50px] bg-primary text-white rounded-full hover:bg-white border border-primary hover:text-primary transition duration-300 justify-center items-center font-semibold">
+                                Daftar Sekarang
+                            </a>
+                            <a href="#"
+                                class="flex w-full sm:w-[200px] h-[50px] bg-white text-primary border border-primary rounded-full justify-center items-center font-semibold">
+                                Tentan Kami
+                            </a>
+                        </div>
+                        <div
+                            class="w-full py-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 2xl:flex 2xl:space-x-0 2xl:space-y-0">
+                            <div
+                                class="flex-shrink-0 w-36 sm:w-full 2xl:w-36 flex flex-col items-start space-y-2 p-4 rounded-lg bg-white">
+                                <span class="text-4xl sm:text-3xl font-extrabold text-yellow-400">1000+</span>
+                                <span class="text-sm sm:text-md text-slate-800 font-semibold">Courses to choose
+                                    from</span>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-36 sm:w-full 2xl:w-36 flex flex-col items-start space-y-2 p-4 rounded-lg bg-white">
+                                <span class="text-4xl sm:text-3xl font-extrabold text-primary">5000+</span>
+                                <span class="text-sm sm:text-md text-slate-800 font-semibold">Courses to choose
+                                    from</span>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-36 sm:w-full 2xl:w-36 flex flex-col items-start space-y-2 p-4 rounded-lg bg-white">
+                                <span class="text-4xl sm:text-3xl font-extrabold text-orange-500">200+</span>
+                                <span class="text-sm sm:text-md text-slate-800 font-semibold">Professional
+                                    Trainers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- gambar -->
+                <div class="w-full 2xl:w-1/2 flex justify-center items-center px-4">
+                    <img class="w-full" src="./src/img/hero.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero end -->
+
+    <!-- Key information -->
+    <div class="w-full 2xl:mt-0 sm:mt-0 text-white">
+        <div class="max-w-full bg-primary flex justify-between py-8 2xl:px-24 sm:px-4">
+            <p class="2xl:text-[24px] sm:text-[16px] font-semibold">Sekolah Fasilitasi Bootcamp</p>
+            <button type="button" class="border border-white 2xl:px-8 2xl:py-2 sm:px-4 sm:py-2 rounded-full hover:bg-white hover:text-primary transition duration-300 font-semibold 2xl:text-[24px] sm:text-[14px]">
+                Daftar Sekarang
+            </button>
+        </div>
+        <div class="w-full flex flex-col md:flex-row 2xl:flex-row bg-blue-900 2xl:px-24 sm:px-4 py-8">
+            <!-- Key Information -->
+            <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/4 2xl:w-1/4 2xl:px-0 sm:px-8">
+                <p class="block text-white font-semibold">Key Information</p>
+            </div>
+            
+            <!-- Information -->
+            <div class="container w-full md:w-3/4 2xl:w-3/4 flex flex-col md:flex-row 2xl:flex-row ml-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 gap-4 gap-y-8 text-white w-full">
+                    <!-- Column 1 -->
+                    <div>
+                        <h3 class="font-bold mb-2">Who's it for?</h3>
+                        <span class="block border-t-2 border-white w-full my-4"></span>
+                        <p>Young professionals and students aged 18-25 years</p>
+                    </div>
+                    <!-- Column 2 -->
+                    <div>
+                        <h3 class="font-bold mb-2">Duration</h3>
+                        <span class="block border-t-2 border-white w-full my-4"></span>
+                        <p>Asynchronous: 1 month</p>
+                        <p>Synchronous: 4 days</p>
+                    </div>
+                    <!-- Column 3 -->
+                    <div>
+                        <h3 class="font-bold mb-2">Cost</h3>
+                        <span class="block border-t-2 border-white w-full my-4"></span>
+                        <p>Free</p>
+                    </div>
+                    <!-- Column 4 -->
+                    <div>
+                        <h3 class="font-bold mb-2">Format</h3>
+                        <span class="block border-t-2 border-white w-full my-4"></span>
+                        <p>Online and in-person</p>
+                    </div>
+                    <!-- Column 5 -->
+                    <div>
+                        <h3 class="font-bold mb-2">Date</h3>
+                        <span class="block border-t-2 border-white w-full my-4"></span>
+                        <p>Asynchronous: Starts August 2023</p>
+                        <p>Synchronous: Starts September 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <script src="./src/js/script.js"></script>
+
+    <!-- animating -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
