@@ -12,13 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
-<body class="">
+<body>
     <!-- header start -->
-    <header class="2xl:px-24 sm:px-4 bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
+    <header class="max-w-full bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-0">
+        <div class="container px-0">
             <div class="flex items-center justify-between relative">
                 <div>
-                    <a class="flex text-primary text-lg font-bold items-center justify-center py-6" href="#home">
+                    <a class="flex text-primary text-lg font-bold items-center justify-center py-6 px-0" href="#home">
                         <img src="src/img/logo.jpeg" width="45" alt="" srcset="">
                         <p class="ml-3 font-normal">Sekolah Fasilitasi</p>
                     </a>
@@ -30,9 +30,9 @@
                         <span
                             class="block hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full 2xl:block 2xl:static 2xl:bg-transparent 2xl:max-w-full 2xl:shadow-none 2xl:rounded-none"
+                    <nav class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-4 top-full 2xl:block 2xl:static 2xl:bg-transparent 2xl:max-w-full 2xl:shadow-none 2xl:rounded-none px-0"
                         id="nav-menu">
-                        <ul class="block 2xl:flex">
+                        <ul class="block 2xl:flex px-0">
                             <li class="group"><a
                                     class="text-base text-primary py-2 mx-4 flex underline-animation active:font-semibold"
                                     href="#home">Home</a></li>
@@ -48,23 +48,28 @@
             </div>
         </div>
     </header>
+
     <!-- header end -->
 
     <!-- hero start -->
-    <div id="home" class="max-w-full 2xl:mt-8 sm:mt-28 2xl:px-24 sm:px-4">
+    <div id="home" class="max-w-full 2xl:mt-8 sm:mt-28 2xl:px-0 sm:px-0">
         <div class="container mx-auto p-0">
             <div class="flex flex-wrap 2xl:flex-nowrap justify-between">
                 <!-- bagian text -->
                 <div class="w-full 2xl:w-1/2 h-auto 2xl:h-screen flex items-center justify-center pt-4">
-                    <div class="space-y-4 w-full">
-                        <h2 class="text-dark 2xl:text-5xl sm:text-3xl font-semibold 2xl:leading-[56px] sm:leading-[40px]">
+                    <div class="w-full">
+                        <h2
+                            class="text-dark 2xl:text-5xl sm:text-3xl font-semibold 2xl:leading-[56px] sm:leading-[40px]">
                             Future Sustainable Development Leaders
                         </h2>
-                        <p class="mt-4 text-gray-600 font-medium text-sm sm:text-base md:text-lg">
-                            Siap jadi pemimpin masa depan di bidang pengembangan berkelanjutan? Yuk, bergabung dengan
-                            bootcamp kami! Kamu akan belajar keterampilan praktis dan cara kreatif untuk mengatasi
-                            tantangan dunia. Ayo, bersama kita bisa bikin perubahan yang berarti dan wujudkan masa depan
-                            yang lebih baik. Daftar sekarang!
+                        <h2 class="mt-2 text-primary font-semibold text-lg">
+                            Facilitator Bootcamp by Sekolah Fasilitasi
+                        </h2>
+                        <p class="my-8 text-gray-600 font-medium text-sm sm:text-base md:text-lg">
+                            Sekolah Fasilitasi membuka kesempatan lewat program Bootcamp enam bulan yang didesain khusus
+                            untuk kamu yang berusia 20-25 tahun. Di sini, kamu akan belajar keterampilan fasilitasi
+                            untuk pembangunan berkelanjutan.Tunggu apa lagi? Daftar sekarang dan jadi bagian dari
+                            generasi pemimpin masa depan! Bagikan juga info ini ke teman atau kolegamu yang tertarik!
                         </p>
                         <div class="w-full flex flex-col space-y-4 mt-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                             <a href="#"
@@ -73,10 +78,11 @@
                             </a>
                             <a href="#"
                                 class="flex w-full sm:w-[200px] h-[50px] bg-white text-primary border border-primary rounded-full justify-center items-center font-semibold">
-                                Tentan Kami
+                                Tentang Kami
                             </a>
                         </div>
-                        <div
+
+                        <!-- <div
                             class="w-full py-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 2xl:flex 2xl:space-x-0 2xl:space-y-0">
                             <div
                                 class="flex-shrink-0 w-36 sm:w-full 2xl:w-36 flex flex-col items-start space-y-2 p-4 rounded-lg bg-white">
@@ -96,7 +102,7 @@
                                 <span class="text-sm sm:text-md text-slate-800 font-semibold">Professional
                                     Trainers</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- gambar -->
@@ -112,19 +118,23 @@
     <div class="w-full 2xl:mt-0 sm:mt-0 text-white">
         <div class="max-w-full bg-primary flex justify-between py-8 2xl:px-24 sm:px-4">
             <p class="2xl:text-[24px] sm:text-[16px] font-semibold">Sekolah Fasilitasi Bootcamp</p>
-            <button type="button" class="border border-white 2xl:px-8 2xl:py-2 sm:px-4 sm:py-2 rounded-full hover:bg-white hover:text-primary transition duration-300 font-semibold 2xl:text-[24px] sm:text-[14px]">
-                Daftar Sekarang
-            </button>
+            <div>
+                <a href="#"
+                    class="flex w-full sm:w-[200px] h-[50px] text-white border border-white rounded-full justify-center items-center font-semibold hover:bg-white hover:text-primary transition duration-300">
+                    Daftar Sekarang
+                </a>
+            </div>
         </div>
         <div class="w-full flex flex-col md:flex-row 2xl:flex-row bg-blue-900 2xl:px-24 sm:px-4 py-8">
             <!-- Key Information -->
             <div class="flex-shrink-0 mb-4 md:mb-0 md:w-1/4 2xl:w-1/4 2xl:px-0 sm:px-8">
                 <p class="block text-white font-semibold">Key Information</p>
             </div>
-            
+
             <!-- Information -->
             <div class="container w-full md:w-3/4 2xl:w-3/4 flex flex-col md:flex-row 2xl:flex-row ml-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 gap-4 gap-y-8 text-white w-full">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 gap-4 gap-y-8 text-white w-full">
                     <!-- Column 1 -->
                     <div>
                         <h3 class="font-bold mb-2">Who's it for?</h3>
@@ -159,9 +169,90 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
 
+    <!-- timeline -->
+    <div id="timeline" class="px-4 py-16 bg-gray-100">
+        <div class="max-w-full mx-auto">
+            <!-- text -->
+            <div class="flex items-center justify-center mb-12">
+                <h2 class="font-bold text-3xl md:text-4xl text-center">Timeline</h2>
+            </div>
+            <!-- timeline start -->
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-32 sm:px-0">
+                <!-- Timeline 1 -->
+                <div
+                    class="col-start-1 row-start-1 px-6 py-6 bg-white shadow-lg border-l-4 md:border-l-0 md:border-r-4 border-blue-500 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-blue-600 mb-2">September - Oktober 2024</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Pendaftaran</p>
+                    <div
+                        class="hidden md:block w-6 h-6 bg-blue-500 rounded-full absolute top-0 right-[-15px] transform translate-y-[-50%]">
+                    </div>
+                    <div
+                        class="block md:hidden w-6 h-6 bg-blue-500 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+
+                <!-- Timeline 2 -->
+                <div
+                    class="md:col-start-2 row-start-2 px-6 py-6 bg-white shadow-lg border-l-4 border-green-500 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-green-600 mb-2">Oktober - November 2024</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Seleksi Peserta</p>
+                    <div
+                        class="w-6 h-6 bg-green-500 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+
+                <!-- Timeline 3 -->
+                <div
+                    class="col-start-1 row-start-3 px-6 py-6 bg-white shadow-lg border-l-4 md:border-l-0 md:border-r-4 border-red-500 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-red-600 mb-2">November - Desember 2024</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Online Training</p>
+                    <div
+                        class="hidden md:block w-6 h-6 bg-red-500 rounded-full absolute top-0 right-[-15px] transform translate-y-[-50%]">
+                    </div>
+                    <div
+                        class="block md:hidden w-6 h-6 bg-red-500 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+
+                <!-- Timeline 4 -->
+                <div
+                    class="md:col-start-2 row-start-4 px-6 py-6 bg-white shadow-lg border-l-4 border-yellow-500 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-yellow-600 mb-2">Desember 2024 - Januari 2025</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Bootcamp Event <span class="text-slate-400">(offline,
+                            Jogja*)</span></p>
+                    <div
+                        class="w-6 h-6 bg-yellow-500 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+
+                <!-- Timeline 5 -->
+                <div
+                    class="col-start-1 row-start-5 px-6 py-6 bg-white shadow-lg border-l-4 md:border-l-0 md:border-r-4 border-purple-700 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-purple-700 mb-2">Januari - Februari 2025</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Online Mentoring & Akreditasi</p>
+                    <div
+                        class="hidden md:block w-6 h-6 bg-purple-700 rounded-full absolute top-0 right-[-15px] transform translate-y-[-50%]">
+                    </div>
+                    <div
+                        class="block md:hidden w-6 h-6 bg-purple-700 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+
+                <!-- Timeline 6 -->
+                <div
+                    class="md:col-start-2 row-start-6 px-6 py-6 bg-white shadow-lg border-l-4 border-pink-600 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
+                    <h1 class="text-lg md:text-xl font-semibold text-pink-600 mb-2">Februari 2025</h1>
+                    <p class="text-gray-700 mb-4 font-bold">Project Ideation & Pitching</p>
+                    <div
+                        class="w-6 h-6 bg-pink-600 rounded-full absolute top-0 left-[-15px] transform translate-y-[-50%]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./src/js/script.js"></script>
 
