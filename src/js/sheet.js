@@ -15,3 +15,32 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message));
 });
 
+//dropdown
+document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+    const select = dropdown.querySelector('.select');
+    const menu = dropdown.querySelector('.menu');
+    const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+
+    select.addEventListener('click', function () {
+        dropdown.classList.toggle('open');
+    });
+
+    menu.querySelectorAll('li').forEach(function (item) {
+        item.addEventListener('click', function () {
+            dropdown.querySelector('.selected').textContent = this.textContent;
+            hiddenInput.value = this.textContent;
+            dropdown.classList.remove('open');
+            dropdown.querySelector('.menu li.active').classList.remove('active');
+            this.classList.add('active');
+        });
+    });
+});
+
+// Menutup dropdown jika klik di luar elemen dropdown
+document.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+        }
+    });
+});

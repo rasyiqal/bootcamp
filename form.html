@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pendaftaran</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/css/output.css" rel="stylesheet">
     <link rel="shortcut icon" type="x-icon" href="src/img/icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
-    <div class="max-w-full mx-auto my-32 bg-white">
-        <h1 class="text-2xl font-bold mb-6 text-center">Form Pendaftaran Bootcamp</h1>
+    <div class="max-w-full mx-auto mt-8 mb-8 bg-white">
+        <h1 class="2xl:text-2xl font-bold mb-6 text-center">Form Pendaftaran Bootcamp</h1>
         <form name="bootcamp-form"
             action="https://script.google.com/macros/s/AKfycbwiR0lfcT0-w_kOFCnyTWUnzaa68la19t-ptzqt0ZkDrr3LofwRXIRDs_dYT5zOUdAf/exec"
             method="POST" class="md:px-80 sm:px-4">
@@ -32,30 +32,32 @@
                 </div>
             </div>
             <div class="mb-4">
-                <label for="telepon" class="block text-sm font-medium text-gray-700">Telepon (Whatsapp)</label>
-                <input type="tel" id="telepon" name="telepon"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                <label for="nomor" class="block text-sm font-medium text-gray-700">Nomor Hp (Whatsapp)</label>
+                <input type="number" id="nomor" name="nomor"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ">
             </div>
             <div class="mb-4">
                 <label for="usia" class="block text-sm font-medium text-gray-700">Usia (di bulan November 2024)</label>
                 <input type="number" id="usia" name="usia"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm custom-number-input">
             </div>
-            <div class="mb-4">
-                <label for="nomor" class="block text-sm font-medium text-gray-700">Nomor Hp</label>
-                <input type="text" id="nomor" name="nomor"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label for="pendidikan" class="block text-sm font-medium text-gray-700">Pendidikan</label>
-                    <select id="pendidikan" name="pendidikan"
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        <option value="SMA">SMA</option>
-                        <option value="Diploma">Diploma</option>
-                        <option value="Sarjana">Sarjana</option>
-                    </select>
+            <div class="grid grid-cols-1 gap-4 mb-4">
+                <!-- pedidikan -->
+                <div class="dropdown relative">
+                    <div
+                        class="select cursor-pointer flex justify-between items-center bg-white border border-gray-300 rounded-md px-3 py-2">
+                        <span class="selected">SMA</span>
+                        <div class="caret"></div>
+                    </div>
+                    <input type="hidden" name="pendidikan" value="SMA" id="pendidikan">
+                    <ul class="menu absolute w-full bg-white border border-gray-300 rounded-md mt-1 hidden">
+                        <li class="active px-3 py-2 cursor-pointer hover:bg-gray-100">SMA</li>
+                        <li class="px-3 py-2 cursor-pointer hover:bg-gray-100">S1</li>
+                        <li class="px-3 py-2 cursor-pointer hover:bg-gray-100">S2</li>
+                        <li class="px-3 py-2 cursor-pointer hover:bg-gray-100">S3</li>
+                    </ul>
                 </div>
+                <!-- bidang -->
                 <div>
                     <label for="bidang" class="block text-sm font-medium text-gray-700">Bidang Pendidikan/Pekerjaan Saat
                         Ini</label>
@@ -89,6 +91,9 @@
         </form>
 
     </div>
+    <script>
+        
+    </script>
     <script src="./src/js/sheet.js" defer></script>
 </body>
 
