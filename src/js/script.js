@@ -1,62 +1,45 @@
-//nav-menu font-type
-document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', function() {
-        document.querySelectorAll('#nav-menu a').forEach(item => item.classList.remove('font-semibold'));
-        this.classList.add('font-semibold');
-    });
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwiR0lfcT0-w_kOFCnyTWUnzaa68la19t-ptzqt0ZkDrr3LofwRXIRDs_dYT5zOUdAf/exec';
+const form = document.forms['bootcamp-form'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    console.log('Form data:', data); // Periksa apakah telepon ada di sini
+    fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => response.json())
+        .then(result => {
+            alert("Thank you! Your form is submitted successfully.");
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
 });
 
-//navbar fix
-window.onscroll = function() {
-    const header = document.querySelector('header');
-    const fixNav = header.offsetTop;
+// error mssg
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('bootcamp-form');
+    const errorMessage = document.getElementById('error-message');
 
-    if (window.pageYOffset > fixNav) {
-        header.classList.add('navbar-fixed');
-    } else {
-        header.classList.remove('navbar-fixed');
-    }
-};
+    form.addEventListener('submit', function (event) {
+        // Clear previous error messages
+        errorMessage.textContent = '';
 
-//hamburger icon
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu')
+        // Check if all required fields are filled
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('input[required], select[required], textarea[required]');
 
-hamburger.addEventListener('click',function(){
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden')
-    
-});
-
-//dropdown
-document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-    const select = dropdown.querySelector('.select');
-    const menu = dropdown.querySelector('.menu');
-
-    select.addEventListener('click', function() {
-        dropdown.classList.toggle('open');
-    });
-
-    menu.querySelectorAll('li').forEach(function(item) {
-        item.addEventListener('click', function() {
-            dropdown.querySelector('.selected').textContent = this.textContent;
-            dropdown.classList.remove('open');
-            dropdown.querySelector('.menu li.active').classList.remove('active');
-            this.classList.add('active');
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('border-red-500');
+            } else {
+                field.classList.remove('border-red-500');
+            }
         });
-    });
-});
 
-// Menutup dropdown jika klik di luar elemen dropdown
-document.addEventListener('click', function(e) {
-    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-        if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove('open');
+        if (!isValid) {
+            errorMessage.textContent = 'Mohon isi semua field yang diperlukan.';
+            event.preventDefault(); // Prevent form submission if validation fails
         }
     });
 });
-
-
-
-
-
