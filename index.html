@@ -12,67 +12,38 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
-<body>
+<body class="bg-bg">
     <!-- hero start -->
-    <div id="home" class="max-w-full 2xl:px-24 sm:px-0 2xl:py-12 md:py-6 sm:py-4 bg-bg">
-        <div class="container mx-auto p-0">
-            <div class="grid gap-0 sm:grid-cols-1 2xl:grid-cols-3">
-                <!-- bagian text 1 -->
-                <div class="flex flex-col justify-start h-full text-start">
-                    <h2 class="text-dark font-bold 2xl:text-2xl sm:text-lg 2xl:leading-[28px] sm:leading-[20px] mb-4">
-                        Future Sustainable Development Leaders
-                    </h2>
-                    <p class="text-primary text-lg mb-2 font-semibold">Facilitator Bootcamp by Sekolah Fasilitasi</p>
-                    <p class="text-gray-600 font-medium sm:text-base md:text-lg">
-                        Sekolah Fasilitasi membuka kesempatan lewat program Bootcamp enam bulan yang didesain khusus
-                        untuk kamu yang berusia 20-25 tahun. Di sini, kamu akan belajar keterampilan fasilitasi untuk
-                        pembangunan berkelanjutan. Tunggu apa lagi? Daftar sekarang dan jadi bagian dari generasi
-                        pemimpin masa depan!
-                    </p>
-                </div>
-                <!-- gambar -->
-                <div class="flex justify-center items-center">
-                    <img class="w-[200px] h-auto object-contain" src="./src/img/arimbi-bicara.png" alt="image">
-                </div>
-                <!-- bagian text 2 -->
-                <div class="flex flex-col justify-start h-full text-start">
-                    <h2 class="text-dark font-bold 2xl:text-2xl sm:text-lg 2xl:leading-[28px] sm:leading-[20px] mb-4">
-                        Kamu peduli pada berbagai isu terkait sustainable development?
-                    </h2>
-                    <p class="text-gray-600 font-medium sm:text-base md:text-lg lg:mt-8 sm:mt-0">
-                        Di era ini, solusi berkelanjutan yang efektif dan inklusif sangat dibutuhkan. Tapi, bukan
-                        sembarang solusi—dunia butuh pemimpin muda yang bisa mengarahkan pemangku kepentingan yang
-                        beragam dalam memahami masalah, menghasilkan solusi, dan bertindak nyata.
-                    </p>
-                </div>
+    <div id="home" class="max-w-full 2xl:py-12 sm:py-8 bg-bg">
+        <!-- text -->
+        <div class="max-w-full text-center">
+            <h2 class="text-dark text-3xl mb-2 font-semibold">Future Sustainable Development Leaders</h2>
+            <p class="text-primary text-lg mb-2">Facilitator Bootcamp by Sekolah Fasilitasi</p>
+            <div class="inline-block px-8 py-2 bg-primary rounded-md overflow-hidden">
+                <p class="font-semibold text-md text-white">Sept 2024 to Feb 2025</p>
             </div>
-
-            <div
-                class="w-full flex justify-center items-center space-y-4 mt-8 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-4 md:sm-8">
-                <a href="#form"
-                    class="flex w-full sm:w-[200px] h-[50px] bg-primary text-white rounded-full hover:bg-white border border-primary hover:text-primary transition duration-300 justify-center items-center font-semibold 2xl:text-[16px] sm:text-[12px]">
-                    Daftar Sekarang
-                </a>
-                <a href="#form"
-                    class="flex w-full sm:w-[200px] h-[50px] bg-white text-primary rounded-full hover:bg-primary border border-primary hover:text-white transition duration-300 justify-center items-center font-semibold 2xl:text-[16px] sm:text-[12px]">
-                    Selengkapnya
-                </a>
-            </div>
+        </div>
+        <div class="max-w-full flex items-center justify-center ">
+            <img class="w-[500px] h-auto object-contain" src="./src/img/berpikir2.png" alt="image">
+        </div>
+        <div class="max-w-full flex space-x-4 justify-center mt-8 lg:px-0 sm:px-2">
+            <a href="#form"
+                class="flex w-full sm:w-[200px] h-[50px] bg-primary text-white rounded-full hover:bg-white border border-primary hover:text-primary transition duration-300 justify-center items-center font-semibold 2xl:text-[16px] sm:text-[13px]">
+                Daftar Sekarang
+            </a>
+            <a href="#key-infor"
+                class="flex w-full sm:w-[200px] h-[50px] bg-white text-primary rounded-full hover:bg-primary border border-primary hover:text-white transition duration-300 justify-center items-center font-semibold 2xl:text-[16px] sm:text-[13px]">
+                Selengkapnya
+            </a>
         </div>
     </div>
     <!-- hero end -->
 
     <!-- Key information -->
     <div class="w-full text-white" data-aos="fade-up" data-aos-duration="600">
-        <div class="max-w-full bg-primary flex justify-between py-8 2xl:px-24 sm:px-4">
-            <p class="2xl:text-[24px] sm:text-[16px] 2xl:w-[400px] sm:w-[200px] font-semibold">Sekolah Fasilitasi
-                Bootcamp</p>
-            <div>
-                <a href="form.html"
-                    class="flex w-full 2xl:w-[200px] sm:w-[150px] h-[50px] 2xl:text-[16px] sm:text-[12px] sm:px-2 text-center text-white border border-white rounded-full justify-center items-center font-semibold hover:bg-white hover:text-primary transition duration-300">
-                    Daftar Sekarang
-                </a>
-            </div>
+        <div class="max-w-full bg-primary py-8 flex items-center justify-center sm:justify-center">
+            <p class="lg:text-2xl md:text-2xl sm:text-2xl leading-tight sm:leading-[24px] 2xl:leading-[36px] font-semibold text-center">Sekolah
+                Fasilitasi Bootcamp</p>
         </div>
         <div class="w-full flex flex-col md:flex-row 2xl:flex-row bg-dark 2xl:px-24 sm:px-4 py-8">
             <!-- Key Information -->
@@ -121,19 +92,136 @@
         </div>
     </div>
 
+    <!-- Tentang -->
+    <div id="about" class="max-w-full 2xl:py-12 sm:py-8 lg:px-24 sm:px-8 bg-bg" data-aos="fade-up" data-aos-duration="600">
+        <div class="container mx-auto p-0">
+            <div class="grid sm:grid-cols-1 2xl:grid-cols-3">
+                <!-- bagian text 1 -->
+                <div class="col-span-1 flex flex-col items-center justify-center h-full">
+                    <h2
+                        class="text-dark lg:text-2xl md:text-2xl sm:text-lg font-semibold 2xl:leading-[28px] sm:leading-[20px] mb-4 lg:text-start sm:text-center">
+                        Kamu peduli pada berbagai isu terkait sustainable development?
+                    </h2>
+                    <p class=" text-gray-600 font-medium text-sm sm:text-base md:text-lg lg:text-start sm:text-center">
+                        Di era ini, solusi berkelanjutan yang efektif dan inklusif sangat dibutuhkan. Tapi, bukan
+                        sembarang solusi—dunia butuh pemimpin muda yang bisa mengarahkan pemangku kepentingan yang
+                        beragam dalam memahami masalah, menghasilkan solusi, dan bertindak nyata.
+                    </p>
+                </div>
+                <!-- gambar -->
+                <div class="col-span-1 flex justify-center items-center">
+                    <img class="w-[200px] h-auto object-contain" src="./src/img/arimbi-bicara.png" alt="image">
+                </div>
+                <!-- bagian text 2 -->
+                <div class="col-span-1 flex flex-col items-center justify-center lg:pt-4 sm:pt-0">
+                    <p class=" text-gray-600 font-medium text-sm sm:text-base md:text-lg lg:text-start sm:text-center">
+                        Sekolah Fasilitasi membuka kesempatan lewat program Bootcamp enam bulan yang didesain khusus
+                        untuk kamu yang berusia 20-25 tahun. Di sini, kamu akan belajar keterampilan fasilitasi untuk
+                        pembangunan berkelanjutan. Tunggu apa lagi? Daftar sekarang dan jadi bagian dari generasi
+                        pemimpin masa depan! Bagikan juga info ini ke teman atau kolegamu yang tertarik!
+                    </p>
+                </div>
+            </div>
+            <div class="w-full flex justify-center items-center space-y-4 mt-8 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <a href="#form"
+                    class="flex w-full sm:w-[200px] h-[50px] bg-primary text-white rounded-full hover:bg-white border border-primary hover:text-primary transition duration-300 justify-center items-center font-semibold 2xl:text-[16px] sm:text-[13px]">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Tentang End -->
+
+    <!-- Syarat start-->
+    <div id="syarat" class="max-w-full 2xl:py-12 sm:py-8 bg-dark lg:px-56" data-aos="fade-up" data-aos-duration="600">
+        <div class="container mx-auto p-4 sm:p-0">
+            <div class="max-w-full mx-auto text-center mb-12">
+                <h2
+                    class="text-white font-bold lg:text-3xl md:text-3xl sm:text-2xl leading-tight sm:leading-[24px] 2xl:leading-[36px]">
+                    Persyaratan
+                </h2>
+            </div>
+            <div class="flex flex-col space-y-12">
+                <!-- Requirements Section -->
+                <div class="w-full flex items-center justify-center">
+                    <div
+                        class="w-full max-w-lg bg-bg shadow-lg rounded-lg py-12 px-8 border border-blue-200">
+                        <h2 class="text-center text-dark font-semibold text-md sm:text-lg 2xl:text-xl">Buat Kamu
+                            Yang</h2>
+                        <ul class="list-none space-y-3 text-gray-800 mt-6">
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-2 text-gray-800">•</span>
+                                <span><b>Usia</b> 20-25 tahun</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-3 text-gray-800">•</span>
+                                <span><b>Aktif berkuliah</b> (minimal masuk tahun ketiga) atau pekerja
+                                    muda</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-3 text-gray-800">•</span>
+                                <span">Bidang studi <b>tidak dibatasi</b> namun ada relevansi dengan
+                                    pembangunan berkelanjutan</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-3 text-gray-800">•</span>
+                                <span><b>Sedang aktif</b> memimpin dalam pekerjaan, organisasi
+                                    kemahasiswaan, atau komunitas</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-2 text-gray-800">•</span>
+                                <span class="font-semibold">Dewasa</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-2 text-gray-800">•</span>
+                                <span class="font-semibold">Bertanggung jawab</span>
+                            </li>
+                            <li class="flex items-start text-base sm:text-lg">
+                                <span class="inline-block w-5 mr-2 text-gray-800">•</span>
+                                <span class="font-semibold">Mampu bekerja dalam kelompok</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Activities Section -->
+                <div class="w-full flex items-center justify-center">
+                    <div
+                        class="w-full max-w-lg bg-bg shadow-lg rounded-lg py-12 px-8 border border-green-200">
+                        <h2 class="text-center text-dark font-semibold text-md sm:text-lg 2xl:text-xl">Kegiatan
+                            Kamu</h2>
+                        <ul class="list-none space-y-4 text-gray-800 mt-6 pr-2">
+                            <li class="flex items-start text-sm sm:text-lg">
+                                <span class="inline-block w-4 mr-2 text-gray-800">•</span>
+                                <span><b>Aktif</b> dalam pekerjaan, organisasi, atau komunitas di mana fasilitasi dapat
+                                    atau telah diaplikasikan</span>
+                            </li>
+                            <li class="flex items-start text-sm sm:text-lg">
+                                <span class="inline-block w-4 mr-2 text-gray-800">•</span>
+                                <span>Dapat memberikan <b>ide-ide mengenai penerapan fasilitasi</b> di dalam perusahaan,
+                                    organisasi, atau komunitas yang dipimpin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Syarat End -->
+
     <!-- timeline -->
     <div id="timeline" class="px-4 py-16 bg-bg" data-aos="fade-up" data-aos-duration="600">
         <div class="max-w-full mx-auto">
             <!-- text -->
             <div class="flex items-center justify-center mb-12">
-                <h2 class="font-bold text-3xl md:text-4xl text-center">Timeline</h2>
+                <h2 class="font-bold lg:text-3xl md:text-3xl sm:text-2xl text-center">Timeline & Kegiatan</h2>
             </div>
             <!-- timeline start -->
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-32 sm:px-0">
                 <!-- Timeline 1 -->
                 <div
                     class="col-start-1 row-start-1 px-6 py-6 bg-white shadow-lg border-l-4 md:border-l-0 md:border-r-4 border-blue-500 relative rounded-lg transition-transform duration-300 hover:-translate-y-2">
-                    <h1 class="text-lg md:text-xl font-semibold text-blue-600 mb-2">September - Oktober 2024</h1>
+                    <h1 class="text-lg md:text-xl font-semibold text-dark mb-2">September - Oktober 2024</h1>
                     <p class="text-dark mb-4 font-bold">Pendaftaran</p>
                     <div
                         class="hidden md:block w-6 h-6 bg-blue-500 rounded-full absolute top-0 right-[-15px] transform translate-y-[-50%]">
