@@ -271,12 +271,12 @@
                 <div>
                     <label for="nama" class="block text-sm font-medium text-white">Nama Lengkap</label>
                     <input type="text" id="nama" name="nama" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Isi Nama Lengkap">
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-white">Email</label>
                     <input type="email" id="email" name="email" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Isi email"
                         aria-describedby="email-help">
                     <div id="email-error-container"
                         class="hidden bg-white p-2 rounded-md border border-red-300 mt-2 inline-block">
@@ -290,7 +290,7 @@
                 <input type="text" id="nomor" name="nomor" required maxlength="12" pattern="\d{1,12}"
                     title="Masukkan nomor yang valid (hanya angka, maksimal 12 digit)"
                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    aria-describedby="nomor-help">
+                    aria-describedby="nomor-help" placeholder="08xxxxxxxxx">
                 <div id="error-container" class="hidden bg-white p-2 rounded-md border border-red-300 mt-2">
                     <p id="nomor-error" class="text-sm text-red-500">Masukkan nomor yang valid dengan hanya angka dan
                         maksimal 12 digit.</p>
@@ -301,7 +301,7 @@
                 <label for="usia" class="block text-sm font-medium text-white">Usia (di bulan November 2024)</label>
                 <input type="number" id="usia" name="usia" required min="0" max="99"
                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    aria-describedby="usia-help">
+                    aria-describedby="usia-help" placeholder="Isi Usia Kamu">
                 <div id="usia-error-container"
                     class="hidden inline-block bg-white p-2 rounded-md border border-red-300 mt-2">
                     <p id="usia-error" class="text-sm text-red-500">Masukkan usia yang valid (hanya angka, maksimal 2
@@ -314,6 +314,7 @@
                 <div class="relative">
                     <select id="pendidikan" name="pendidikan" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
+                        <option value="#">--option--</option>
                         <option value="S1/S2(Belum Lulus)">S1/S2 (Belum Lulus)</option>
                         <option value="S1/S2(Sudah Lulus)">S1/S2 (Sudah Lulus)</option>
                         <option value="S3">S3</option>
@@ -335,6 +336,7 @@
                 <div class="relative">
                     <select id="bidang" name="bidang" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
+                        <option value="#">--option--</option>
                         <option
                             value="Ilmu-ilmu Alam: Fisika, Kimia, Biologi, Ilmu kebumian (Geologi, Meteorologi), Lingkungan, dsj"
                             class="whitespace-normal">Ilmu-ilmu Alam: Fisika, Kimia, Biologi, Ilmu kebumian (Geologi,
@@ -381,6 +383,7 @@
                 <div class="relative">
                     <select id="kegiatan" name="kegiatan" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
+                        <option value="#">--option--</option>
                         <option value="Kuliah">Kuliah</option>
                         <option value="Bekerja (Full-time)">Bekerja (Full-time)</option>
                         <option value="Bekerja (Magang/Part-time)">Bekerja (Magang/Part-time)</option>
