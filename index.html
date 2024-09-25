@@ -271,13 +271,14 @@
                 <div>
                     <label for="nama" class="block text-sm font-medium text-white">Nama Lengkap</label>
                     <input type="text" id="nama" name="nama" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Isi Nama Lengkap">
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Isi Nama Lengkap">
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-white">Email</label>
                     <input type="email" id="email" name="email" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Isi email"
-                        aria-describedby="email-help">
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Isi Email Kamu" aria-describedby="email-help">
                     <div id="email-error-container"
                         class="hidden bg-white p-2 rounded-md border border-red-300 mt-2 inline-block">
                         <p id="email-error" class="text-sm text-red-500">Masukkan alamat email yang valid.</p>
@@ -292,18 +293,17 @@
                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     aria-describedby="nomor-help" placeholder="08xxxxxxxxx">
                 <div id="error-container" class="hidden bg-white p-2 rounded-md border border-red-300 mt-2">
-                    <p id="nomor-error" class="text-sm text-red-500">Masukkan nomor yang valid dengan hanya angka dan
-                        maksimal 12 digit.</p>
+                    <p id="nomor-error" class="text-sm text-red-500">Masukkan nomor yang valid (hanya angka, maksimal 12
+                        digit).</p>
                 </div>
             </div>
-            <!-- usia -->
+            <!-- Usia -->
             <div class="mb-4">
                 <label for="usia" class="block text-sm font-medium text-white">Usia (di bulan November 2024)</label>
                 <input type="number" id="usia" name="usia" required min="0" max="99"
                     class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     aria-describedby="usia-help" placeholder="Isi Usia Kamu">
-                <div id="usia-error-container"
-                    class="hidden inline-block bg-white p-2 rounded-md border border-red-300 mt-2">
+                <div id="usia-error-container" class="hidden bg-white p-2 rounded-md border border-red-300 mt-2">
                     <p id="usia-error" class="text-sm text-red-500">Masukkan usia yang valid (hanya angka, maksimal 2
                         digit).</p>
                 </div>
@@ -314,11 +314,11 @@
                 <div class="relative">
                     <select id="pendidikan" name="pendidikan" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--option--</option>
+                        <option value="#">--Pilih Tingkat Pendidikan--</option>
                         <option value="S1/S2(Belum Lulus)">S1/S2 (Belum Lulus)</option>
                         <option value="S1/S2(Sudah Lulus)">S1/S2 (Sudah Lulus)</option>
                         <option value="S3">S3</option>
-                        <option value="diploma">Diploma</option>
+                        <option value="Diploma">Diploma</option>
                         <option value="Lain-Lain">Lain-Lain</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
@@ -330,42 +330,24 @@
                     </div>
                 </div>
             </div>
-            <!-- bidang -->
+            <!-- Bidang -->
             <div class="mb-4">
                 <label for="bidang" class="block text-sm font-medium text-white">Bidang Pendidikan</label>
                 <div class="relative">
                     <select id="bidang" name="bidang" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--option--</option>
-                        <option
-                            value="Ilmu-ilmu Alam: Fisika, Kimia, Biologi, Ilmu kebumian (Geologi, Meteorologi), Lingkungan, dsj"
-                            class="whitespace-normal">Ilmu-ilmu Alam: Fisika, Kimia, Biologi, Ilmu kebumian (Geologi,
-                            Meteorologi), Lingkungan, dsj</option>
-                        <option
-                            value="Ilmu-ilmu Sosial: Psikologi, Sosiologi, Antropologi, Ekonomi, Ilmu Politik, Geografi, dsj."
-                            class="whitespace-normal">Ilmu-ilmu Sosial: Psikologi, Sosiologi, Antropologi, Ekonomi, Ilmu
-                            Politik, Geografi, dsj.</option>
-                        <option value="Humaniora: Sastra, Filosofi, Sejarah, Bahasa, Agama, dsj"
-                            class="whitespace-normal">Humaniora: Sastra, Filosofi, Sejarah, Bahasa, Agama, dsj.</option>
-                        <option
-                            value="Rekayasa dan Teknik: Mesin, Elektronika, Sipil, Komputer, Informatika, Biomedika, dsj"
-                            class="whitespace-normal">Rekayasa dan Teknik: Mesin, Elektronika, Sipil, Komputer,
-                            Informatika, Biomedika, dsj.</option>
-                        <option
-                            value="Ilmu kesehatan dan Medis: Kedokteran, Keperawatan, Farmasi, Kesehatan Masyarakat, dsj"
-                            class="whitespace-normal">Ilmu kesehatan dan Medis: Kedokteran, Keperawatan, Farmasi,
-                            Kesehatan Masyarakat, dsj.</option>
-                        <option
-                            value="Bisnis dan Manajement: Administrasi bisnis, Keuangan, Pemasaran, Sumber Daya Manausia, Kewirausahaan, dsj"
-                            class="whitespace-normal">Bisnis dan Manajement: Administrasi bisnis, Keuangan, Pemasaran,
-                            Sumber Daya Manausia, Kewirausahaan, dsj.</option>
-                        <option value="Seni dan Desain" class="whitespace-normal">Seni dan Desain</option>
-                        <option value="bIlmu Pendidikan" class="whitespace-normal">Ilmu Pendidikan</option>
-                        <option value="Hukum" class="whitespace-normal">Hukum</option>
-                        <option value="Kajian Interdisipliner: Studi lingkungan, Gender, Global, dsj"
-                            class="whitespace-normal">Kajian Interdisipliner: Studi lingkungan, Gender, Global, dsj
-                        </option>
-                        <option value="Lainnya" class="whitespace-normal">Lainnya</option>
+                        <option value="#">--Pilih Bidang Pendidikan--</option>
+                        <option value="Ilmu-ilmu Alam">Ilmu-ilmu Alam</option>
+                        <option value="Ilmu-ilmu Sosial">Ilmu-ilmu Sosial</option>
+                        <option value="Humaniora">Humaniora</option>
+                        <option value="Rekayasa dan Teknik">Rekayasa dan Teknik</option>
+                        <option value="Ilmu kesehatan dan Medis">Ilmu kesehatan dan Medis</option>
+                        <option value="Bisnis dan Manajement">Bisnis dan Manajement</option>
+                        <option value="Seni dan Desain">Seni dan Desain</option>
+                        <option value="Ilmu Pendidikan">Ilmu Pendidikan</option>
+                        <option value="Hukum">Hukum</option>
+                        <option value="Kajian Interdisipliner">Kajian Interdisipliner</option>
+                        <option value="Lainnya">Lainnya</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -376,19 +358,17 @@
                     </div>
                 </div>
             </div>
-
-            <!-- kegiatan -->
+            <!-- Kegiatan -->
             <div class="mb-4">
-                <label for="kegiatan" class="block text-sm font-medium text-white">Kegiatan Kamu Saat ini</label>
+                <label for="kegiatan" class="block text-sm font-medium text-white">Kegiatan Kamu Saat Ini</label>
                 <div class="relative">
                     <select id="kegiatan" name="kegiatan" required
                         class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--option--</option>
+                        <option value="#">--Pilih Kegiatan--</option>
                         <option value="Kuliah">Kuliah</option>
                         <option value="Bekerja (Full-time)">Bekerja (Full-time)</option>
                         <option value="Bekerja (Magang/Part-time)">Bekerja (Magang/Part-time)</option>
-                        <option value="Lulus Kuliah, menunggu bekerj">Lulus Kuliah, menunggu bekerja</option>
-                        <option value="Diploma">Diploma</option>
+                        <option value="Lulus Kuliah, menunggu bekerja">Lulus Kuliah, menunggu bekerja</option>
                         <option value="Tidak Kuliah dan Tidak Bekerja">Tidak Kuliah dan Tidak Bekerja</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
@@ -400,24 +380,18 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Organisasi -->
             <div class="mb-4">
-                <label for="organisasi" class="block text-sm font-medium text-white">Sebutkan Nama Tim, Organisasi
-                    atau Komunitas Dimana Kamu Aktif Memimpin Saat Ini</label>
-                <input type="text" id="organisasi" name="organisasi" required
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-
-            <div class="mb-6">
-                <label for="ide" class="block text-sm font-medium text-white">Ceritakan SATU IDE Proyek Terkait
-                    Sustainable Development yang Akan Kamu Usulkan dalam Bootcamp Ini!</label>
-                <textarea id="ide" name="ide" rows="4" required
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                <label for="organisasi" class="block text-sm font-medium text-white">Sebutkan Organisasi yang Pernah
+                    diikuti</label>
+                <textarea id="organisasi" name="organisasi" rows="3" required
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Isi Organisasi yang Pernah Diikuti"></textarea>
             </div>
 
             <!-- button -->
             <button id="submit" type="submit"
-                class="w-full flex justify-center py-2 px-4 border border-bg border-transparent rounded-md shadow-sm text-[14px] text-white bg-dark hover:bg-blue-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white font-bold">
+                class="w-full flex justify-center py-2 px-4 border border-bg border-transparent rounded-md shadow-sm text-[14px] text-white bg-dark hover:bg-blue-950 hover:text-white font-bold">
                 Submit
             </button>
         </form>
