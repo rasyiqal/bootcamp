@@ -139,7 +139,7 @@
     <!-- Tentang End -->
 
     <!-- Syarat start-->
-    <div id="syarat" class="max-w-full 2xl:py-12 sm:py-8 bg-dark lg:px-56" data-aos="fade-up" data-aos-duration="600">
+    <div id="syarat" class="max-w-full 2xl:py-12 sm:py-8 bg-textColor lg:px-56" data-aos="fade-up" data-aos-duration="600">
         <div class="container mx-auto p-4 sm:p-0">
             <div class="max-w-full mx-auto text-center mb-12">
                 <h2
@@ -178,11 +178,11 @@
     <!-- Syarat End -->
 
     <!-- timeline -->
-    <div id="timeline" class="px-4 py-16 bg-bg" data-aos="fade-up" data-aos-duration="600">
+    <div id="timeline" class="px-4 py-16 bg-dark" data-aos="fade-up" data-aos-duration="600">
         <div class="max-w-full mx-auto">
             <!-- text -->
             <div class="flex items-center justify-center mb-12">
-                <h2 class="font-bold lg:text-3xl md:text-3xl sm:text-2xl text-center">Timeline & Kegiatan</h2>
+                <h2 class="font-bold lg:text-3xl md:text-3xl sm:text-2xl text-center text-white">Timeline & Kegiatan</h2>
             </div>
             <!-- timeline start -->
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 md:px-32 sm:px-0">
@@ -261,160 +261,10 @@
     </div>
 
     <!-- form -->
-    <div id="form" class="max-w-full mx-auto bg-textColor py-8" data-aos="fade-up" data-aos-duration="600">
-        <h1 class="2xl:text-2xl sm:text-[20px] font-bold mb-6 text-center text-white">Daftar Sekarang</h1>
-        <form name="bootcamp-form"
-            action="https://script.google.com/macros/s/AKfycbwiR0lfcT0-w_kOFCnyTWUnzaa68la19t-ptzqt0ZkDrr3LofwRXIRDs_dYT5zOUdAf/exec"
-            method="POST" class="lg:px-80 md:px-60 sm:px-4 space-y-8">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label for="nama" class="block text-sm font-medium text-white">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                        placeholder="Isi Nama Lengkap">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium text-white">Email</label>
-                    <input type="email" id="email" name="email" required
-                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                        placeholder="Isi Email Kamu" aria-describedby="email-help">
-                    <div id="email-error-container"
-                        class="hidden bg-white p-2 rounded-md border border-red-300 mt-2 inline-block">
-                        <p id="email-error" class="text-sm text-red-500">Masukkan alamat email yang valid.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Whatsapp -->
-            <div class="mb-4">
-                <label for="nomor" class="block text-sm font-medium text-white">Nomor Hp (Whatsapp)</label>
-                <input type="text" id="nomor" name="nomor" required maxlength="12" pattern="\d{1,12}"
-                    title="Masukkan nomor yang valid (hanya angka, maksimal 12 digit)"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    aria-describedby="nomor-help" placeholder="08xxxxxxxxx">
-                <div id="error-container" class="hidden bg-white p-2 rounded-md border border-red-300 mt-2">
-                    <p id="nomor-error" class="text-sm text-red-500">Masukkan nomor yang valid (hanya angka, maksimal 12
-                        digit).</p>
-                </div>
-            </div>
-            <!-- Usia -->
-            <div class="mb-4">
-                <label for="usia" class="block text-sm font-medium text-white">Usia (di bulan November 2024)</label>
-                <input type="number" id="usia" name="usia" required min="0" max="99"
-                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    aria-describedby="usia-help" placeholder="Isi Usia Kamu">
-                <div id="usia-error-container" class="hidden bg-white p-2 rounded-md border border-red-300 mt-2">
-                    <p id="usia-error" class="text-sm text-red-500">Masukkan usia yang valid (hanya angka, maksimal 2
-                        digit).</p>
-                </div>
-            </div>
-            <!-- Pendidikan -->
-            <div class="mb-4">
-                <label for="pendidikan" class="block text-sm font-medium text-white">Tingkat Pendidikan</label>
-                <div class="relative">
-                    <select id="pendidikan" name="pendidikan" required
-                        class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--Pilih Tingkat Pendidikan--</option>
-                        <option value="S1/S2(Belum Lulus)">S1/S2 (Belum Lulus)</option>
-                        <option value="S1/S2(Sudah Lulus)">S1/S2 (Sudah Lulus)</option>
-                        <option value="S3">S3</option>
-                        <option value="Diploma">Diploma</option>
-                        <option value="Lain-Lain">Lain-Lain</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <!-- Bidang -->
-            <div class="mb-4">
-                <label for="bidang" class="block text-sm font-medium text-white">Bidang Pendidikan</label>
-                <div class="relative">
-                    <select id="bidang" name="bidang" required
-                        class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--Pilih Bidang Pendidikan--</option>
-                        <option value="Ilmu-ilmu Alam">Ilmu-ilmu Alam</option>
-                        <option value="Ilmu-ilmu Sosial">Ilmu-ilmu Sosial</option>
-                        <option value="Humaniora">Humaniora</option>
-                        <option value="Rekayasa dan Teknik">Rekayasa dan Teknik</option>
-                        <option value="Ilmu kesehatan dan Medis">Ilmu kesehatan dan Medis</option>
-                        <option value="Bisnis dan Manajement">Bisnis dan Manajement</option>
-                        <option value="Seni dan Desain">Seni dan Desain</option>
-                        <option value="Ilmu Pendidikan">Ilmu Pendidikan</option>
-                        <option value="Hukum">Hukum</option>
-                        <option value="Kajian Interdisipliner">Kajian Interdisipliner</option>
-                        <option value="Lainnya">Lainnya</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <!-- Kegiatan -->
-            <div class="mb-4">
-                <label for="kegiatan" class="block text-sm font-medium text-white">Kegiatan Kamu Saat Ini</label>
-                <div class="relative">
-                    <select id="kegiatan" name="kegiatan" required
-                        class="block w-full mt-1 p-2 pr-10 border border-gray-300 bg-white rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 appearance-none focus:outline-none">
-                        <option value="#">--Pilih Kegiatan--</option>
-                        <option value="Kuliah">Kuliah</option>
-                        <option value="Bekerja (Full-time)">Bekerja (Full-time)</option>
-                        <option value="Bekerja (Magang/Part-time)">Bekerja (Magang/Part-time)</option>
-                        <option value="Lulus Kuliah, menunggu bekerja">Lulus Kuliah, menunggu bekerja</option>
-                        <option value="Tidak Kuliah dan Tidak Bekerja">Tidak Kuliah dan Tidak Bekerja</option>
-                    </select>
-                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <!-- Organisasi -->
-            <div class="mb-4">
-                <label for="organisasi" class="block text-sm font-medium text-white">Sebutkan Organisasi yang Pernah
-                    diikuti</label>
-                <textarea id="organisasi" name="organisasi" rows="3" required
-                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    placeholder="Isi Organisasi yang Pernah Diikuti"></textarea>
-            </div>
-
-            <!-- button -->
-            <button id="submit" type="submit"
-                class="w-full flex justify-center py-2 px-4 border border-bg border-transparent rounded-md shadow-sm text-[14px] text-white bg-dark hover:bg-blue-950 hover:text-white font-bold">
-                Submit
-            </button>
-        </form>
-        <!-- Modal -->
-        <div id="success-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-            <div class="bg-white p-6 rounded-lg shadow-lg w-80">
-                <div class="flex justify-center mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 30 30"
-                        style="fill:#40C057;">
-                        <path
-                            d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z">
-                        </path>
-                    </svg>
-                </div>
-                <p class="text-center text-lg font-bold mb-4">Berhasil Submit</p>
-                <button id="ok-button"
-                    class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white font-bold">
-                    Ok
-                </button>
-            </div>
-        </div>
-    </div>
-
+    <div id="form" class="max-w-full mx-auto pt-8 pb-0 flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="600">
+        <h1 class="2xl:text-2xl sm:text-[20px] font-bold mb-6 text-center">Daftar Sekarang</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHiJLwAbfH4DBk4lk6tiKS2DrxiGAAe_xsgALRDuTZ5KNCbw/viewform?embedded=true" width="1240" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>    
     <!-- footer -->
     <footer class="bg-gray-800 text-white py-6 space-y-6" data-aos="fade-up" data-aos-duration="600">
         <div class="container mx-auto flex flex-col items-center space-y-4">
